@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+}
+
+.card-wrapper {
+  width: 400px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card-image {
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 400px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.card-image img:hover {
+  filter: grayscale(1);
+  transform: scale(1.3);
+}
+
+.card-details {
+  padding: 25px;
+  overflow: hidden;
+}
+
+.card-details h4 {
+  color: #20a2aa;
+}
+
+.card-details h2 {
+  letter-spacing: 3px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.card-details p {
+  text-align: justify;
+  color: #888;
+}
+
+.card-details .power {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #20a2aa;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 600;
+  border-radius: 0 0 10px 0;
+  z-index: 1;
+}
+
+.card-details a {
+  text-decoration: none;
+  color: white;
+  background-color: #20a2aa;
+  padding: 8px 25px;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.card-details a:hover {
+  background-color: #1b868b;
+}
+
+.card-details a:active {
+  outline: 5px solid rgba(27, 134, 139, 0.5);
+}
